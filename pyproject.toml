@@ -1,0 +1,20 @@
+[project]
+authors = [{name = "fecet", email = "xiezej@gmail.com"}]
+dependencies = []
+description = "Add a short description here"
+name = "platconf"
+requires-python = ">= 3.10"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+platconf = { path = ".", editable = true }
+
+[tool.pixi.tasks]
